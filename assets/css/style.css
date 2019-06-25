@@ -1,0 +1,29 @@
+body {
+    background-image: url(../images/aRpHDo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+ .container_two {
+    background: rgba(250, 252, 251, 0.3);
+} 
+
+.display-3 {
+    font-family: 'Lobster', cursive;
+    font-size: 100px;
+}
+
+
+p {
+    color:black;
+    font-weight: bold;
+    background: rgba(250, 252, 251, 0.5);
+}
+
+#wordToGuess {
+    font-size: 60px;
+    text-transform: capitalize;   
+    
+}
+
