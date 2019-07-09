@@ -70,9 +70,10 @@ function checkLetters(letter) {
     else {
         wrongLetters.push(letter);
         guessesLeft--;
+        // startGame();
     }
     
-}
+ }
 
 function roundComplete() {
     // update information to html
@@ -82,21 +83,22 @@ function roundComplete() {
 
     document.getElementById("wrongGuesses").innerHTML = wrongLetters.join(" ");
     // check if user won
-    if (lettersinWord.toString() == wordsToGuess.toString()) {
+    if (lettersinWord.toString() == wordToGuess.toString()) {
         winCount++;
-
+        
         // update win counter html
         document.getElementById("winCounter").innerHTML = winCount;
         setTimeout(startGame, 3000);
-
+        // startGame();
     }
 
     // check if user lost
-    else if (guessesLeft == 0) {
+    else if (guessesLeft === 0) {
         lossCount++;
-
+        
         // update html losses
         document.getElementById("lossCounter").innerHTML = lossCount;
+        
         setTimeout(startGame, 3000);
         // startGame();
     }
