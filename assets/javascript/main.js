@@ -99,8 +99,8 @@ function roundComplete() {
         // update html losses
         document.getElementById("lossCounter").innerHTML = lossCount;
         
-        setTimeout(startGame, 3000);
-        // startGame();
+        setTimeout(startGame, 2000);
+        startGame();
     }
 }
 
